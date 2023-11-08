@@ -1,0 +1,26 @@
+<html>
+    <style>  
+        h1 {  
+          text-decoration-line: underline;  
+        }  
+        </style>  
+        <head>
+<body bgcolor="white" text="black">
+   <center> <h1>Table</h1></center>
+
+    <script type="text/javascript">
+
+    var number = prompt("Please enter a number:");
+
+    document.write('<center><table border="2">');
+    for (i=1; i <= number; i++) {
+        document.write('<tr><td>' + number + " x " + i + "</td><td>=</td><td>" + i*number + "</td></tr>");
+    };
+    document.write('</table></center>');
+
+
+    </script>
+
+</body>
+</head>
+</html>

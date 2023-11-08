@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat sans-serif";
+   /* background: linear-gradient(rgba(0,0,0,0.5),) url(/img/bg5.jpg);*/
+    
+}
+.box{
+    border-radius: 20px;
+    width: 300px;
+    padding: 30px;
+   /* border: 2px solid orangered;*/
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px #ffc400ef;
+    display: flex;
+    flex-direction: column;
+}
+.box h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+}
+.box input[type="text"],
+.box input[type="password"]{
+    font-size: 20px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}

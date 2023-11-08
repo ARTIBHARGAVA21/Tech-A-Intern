@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1{
+    background-color: black;
+    width: 30%;
+    color: aliceblue;
+}
+.container{
+    background-color: white;
+}
+button{
+    background-color: black;
+    color: white;
+    width:50%;
+    height: 30px;
+}
+
+
+    
+    </style>
+</head>
+<body><center>
+    <h1> Target Is 1 Crore <h1>
+        <div class="container">
+             <input type="text" name="a" id="first" placeholder="Enter first value" >
+        
+ <input type="text" name="b" id="second" placeholder="Enter second value" >
+       
+             <input type="text" name="c" id="third" placeholder="Enter third value"><br>
+             <input type="text" name="d" id="fourth" placeholder="Enter fourth value">
+             <input type="text" name="e" id="fifth" placeholder="Enter fifth value"><br><br>
+           
+        <button onclick="add ( )">Submit</button> 
+        <div id="add"></div>
+        <div id="target"></div>
+        </div> 
+  </center>
+  <script type="text/javascript">
+    function add( )
+    {
+    var a,b,c,d,e,Add,target;
+    a = parseInt(document.getElementById ("first").value);
+    b = parseInt(document.getElementById ("second").value);
+    c = parseInt(document.getElementById ("third").value);
+    d = parseInt(document.getElementById ("fourth").value);
+    e = parseInt(document.getElementById ("fifth").value);
+    Add = a+b+c+d+e; //Add two numb
+    target = 10000000-Add; //Subtraction of two numbers
+    //To print the result
+    document.getElementById ("add") .innerHTML ="Addition : "+Add;
+    document.getElementById ("target").innerHTML ="Target : "+target;
+    }
+    </script>
+    </body>
+</html>
